@@ -1,0 +1,11 @@
+{
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "rubocop.vscode-rubocop",
+    }
+}

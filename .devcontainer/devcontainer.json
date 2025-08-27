@@ -1,0 +1,19 @@
+{
+    "name": "Railshoeck Inertia Demo",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
+    "forwardPorts": [
+        3000,
+        5432
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Shopify.ruby-lsp",
+                "rubocop.vscode-rubocop",
+                "biomejs.biome"
+            ]
+        }
+    }
+}

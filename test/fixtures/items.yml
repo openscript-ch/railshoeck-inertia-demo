@@ -1,0 +1,361 @@
+# == Schema Information
+#
+# Table name: items
+#
+#  id          :bigint           not null, primary key
+#  acquisition :date
+#  item_type   :enum
+#  name        :string
+#  price       :float
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+item_1:
+  id: 1
+  name: "Laptop"
+  price: 1199.99
+  acquisition: 2023-06-12
+  item_type: electronics
+
+item_2:
+  id: 2
+  name: "Sofa"
+  price: 899.50
+  acquisition: 2022-11-05
+  item_type: furniture
+
+item_3:
+  id: 3
+  name: "Vase"
+  price: 45.00
+  acquisition: 2024-01-17
+  item_type: decoration
+
+item_4:
+  id: 4
+  name: "Television"
+  price: 749.00
+  acquisition: 2023-04-08
+  item_type: electronics
+
+item_5:
+  id: 5
+  name: "Bookshelf"
+  price: 129.99
+  acquisition: 2023-07-23
+  item_type: furniture
+
+item_6:
+  id: 6
+  name: "Wall Art"
+  price: 85.75
+  acquisition: 2022-12-14
+  item_type: decoration
+
+item_7:
+  id: 7
+  name: "Smartphone"
+  price: 999.99
+  acquisition: 2023-10-01
+  item_type: electronics
+
+item_8:
+  id: 8
+  name: "Dining Table"
+  price: 659.00
+  acquisition: 2023-05-15
+  item_type: furniture
+
+item_9:
+  id: 9
+  name: "Candle Holder"
+  price: 29.95
+  acquisition: 2022-09-20
+  item_type: decoration
+
+item_10:
+  id: 10
+  name: "Bluetooth Speaker"
+  price: 149.00
+  acquisition: 2023-03-19
+  item_type: electronics
+
+item_11:
+  id: 11
+  name: "Office Chair"
+  price: 199.99
+  acquisition: 2023-08-03
+  item_type: furniture
+
+item_12:
+  id: 12
+  name: "Curtains"
+  price: 74.25
+  acquisition: 2022-10-27
+  item_type: decoration
+
+item_13:
+  id: 13
+  name: "Headphones"
+  price: 299.99
+  acquisition: 2024-02-01
+  item_type: electronics
+
+item_14:
+  id: 14
+  name: "Coffee Table"
+  price: 159.99
+  acquisition: 2023-01-11
+  item_type: furniture
+
+item_15:
+  id: 15
+  name: "Sculpture"
+  price: 120.00
+  acquisition: 2023-06-17
+  item_type: decoration
+
+item_16:
+  id: 16
+  name: "Monitor"
+  price: 225.75
+  acquisition: 2023-09-22
+  item_type: electronics
+
+item_17:
+  id: 17
+  name: "Wardrobe"
+  price: 899.00
+  acquisition: 2022-08-30
+  item_type: furniture
+
+item_18:
+  id: 18
+  name: "Mirror"
+  price: 60.00
+  acquisition: 2023-10-12
+  item_type: decoration
+
+item_19:
+  id: 19
+  name: "Smartwatch"
+  price: 249.00
+  acquisition: 2023-12-06
+  item_type: electronics
+
+item_20:
+  id: 20
+  name: "Bed Frame"
+  price: 499.99
+  acquisition: 2024-01-20
+  item_type: furniture
+
+item_21:
+  id: 21
+  name: "Painting"
+  price: 210.00
+  acquisition: 2023-02-15
+  item_type: decoration
+
+item_22:
+  id: 22
+  name: "Tablet"
+  price: 399.00
+  acquisition: 2023-07-07
+  item_type: electronics
+
+item_23:
+  id: 23
+  name: "Armchair"
+  price: 349.99
+  acquisition: 2023-03-25
+  item_type: furniture
+
+item_24:
+  id: 24
+  name: "Floor Lamp"
+  price: 89.90
+  acquisition: 2022-11-30
+  item_type: decoration
+
+item_25:
+  id: 25
+  name: "Drone"
+  price: 599.00
+  acquisition: 2023-05-10
+  item_type: electronics
+
+item_26:
+  id: 26
+  name: "Desk"
+  price: 279.00
+  acquisition: 2023-09-01
+  item_type: furniture
+
+item_27:
+  id: 27
+  name: "Tapestry"
+  price: 110.00
+  acquisition: 2023-12-03
+  item_type: decoration
+
+item_28:
+  id: 28
+  name: "Camera"
+  price: 549.00
+  acquisition: 2023-06-20
+  item_type: electronics
+
+item_29:
+  id: 29
+  name: "Bookshelf Ladder"
+  price: 139.99
+  acquisition: 2022-10-18
+  item_type: furniture
+
+item_30:
+  id: 30
+  name: "Clock"
+  price: 55.00
+  acquisition: 2023-01-09
+  item_type: decoration
+
+item_31:
+  id: 31
+  name: "Game Console"
+  price: 499.00
+  acquisition: 2023-08-13
+  item_type: electronics
+
+item_32:
+  id: 32
+  name: "Recliner"
+  price: 699.99
+  acquisition: 2023-04-04
+  item_type: furniture
+
+item_33:
+  id: 33
+  name: "Decorative Bowl"
+  price: 38.50
+  acquisition: 2023-10-17
+  item_type: decoration
+
+item_34:
+  id: 34
+  name: "VR Headset"
+  price: 429.00
+  acquisition: 2023-11-25
+  item_type: electronics
+
+item_35:
+  id: 35
+  name: "TV Stand"
+  price: 239.00
+  acquisition: 2022-09-12
+  item_type: furniture
+
+item_36:
+  id: 36
+  name: "Rug"
+  price: 190.00
+  acquisition: 2023-05-28
+  item_type: decoration
+
+item_37:
+  id: 37
+  name: "Printer"
+  price: 179.99
+  acquisition: 2024-02-17
+  item_type: electronics
+
+item_38:
+  id: 38
+  name: "Chest of Drawers"
+  price: 399.00
+  acquisition: 2023-06-08
+  item_type: furniture
+
+item_39:
+  id: 39
+  name: "Cushions"
+  price: 65.00
+  acquisition: 2023-11-02
+  item_type: decoration
+
+item_40:
+  id: 40
+  name: "E-reader"
+  price: 129.99
+  acquisition: 2023-09-10
+  item_type: electronics
+
+item_41:
+  id: 41
+  name: "Nightstand"
+  price: 89.99
+  acquisition: 2022-12-22
+  item_type: furniture
+
+item_42:
+  id: 42
+  name: "Table Runner"
+  price: 34.99
+  acquisition: 2023-04-15
+  item_type: decoration
+
+item_43:
+  id: 43
+  name: "Soundbar"
+  price: 319.99
+  acquisition: 2023-07-27
+  item_type: electronics
+
+item_44:
+  id: 44
+  name: "Stool"
+  price: 55.75
+  acquisition: 2023-01-31
+  item_type: furniture
+
+item_45:
+  id: 45
+  name: "Wall Clock"
+  price: 72.00
+  acquisition: 2023-03-04
+  item_type: decoration
+
+item_46:
+  id: 46
+  name: "Router"
+  price: 139.00
+  acquisition: 2023-06-01
+  item_type: electronics
+
+item_47:
+  id: 47
+  name: "Sideboard"
+  price: 499.99
+  acquisition: 2023-10-05
+  item_type: furniture
+
+item_48:
+  id: 48
+  name: "Indoor Plant"
+  price: 59.00
+  acquisition: 2023-11-11
+  item_type: decoration
+
+item_49:
+  id: 49
+  name: "External Hard Drive"
+  price: 109.99
+  acquisition: 2023-12-15
+  item_type: electronics
+
+item_50:
+  id: 50
+  name: "Bench"
+  price: 219.99
+  acquisition: 2022-08-05
+  item_type: furniture
