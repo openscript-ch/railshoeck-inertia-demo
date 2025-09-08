@@ -7,7 +7,7 @@ import type { Item } from "../../models/Item";
 import { IconMoodSad } from "@tabler/icons-react";
 import classes from "../../components/datatable.module.css";
 
-export default function MergingProps({ items }: { items: Item[] }) {
+export default function MergingProps({ items, title }: { items: Item[], title: string }) {
   const scrollViewportRef = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(false);
 
@@ -30,7 +30,8 @@ export default function MergingProps({ items }: { items: Item[] }) {
   };
 
   return (
-    <>
+    <main>
+      <h1>{title}</h1>
       <DataTable
         withTableBorder
         borderRadius="sm"
@@ -80,6 +81,6 @@ export default function MergingProps({ items }: { items: Item[] }) {
           </Button>
         </Group>
       </Paper>
-    </>
+    </main>
   );
 }

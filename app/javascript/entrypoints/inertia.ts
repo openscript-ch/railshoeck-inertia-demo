@@ -1,7 +1,7 @@
 import { createInertiaApp } from "@inertiajs/react";
 import { type ReactNode, createElement } from "react";
 import { createRoot } from "react-dom/client";
-import AppLayout from "../AppLayout";
+import Layout from "../AppLayout";
 
 // Temporary type definition, until @inertiajs/react provides one
 type ResolvedComponent = {
@@ -36,9 +36,8 @@ createInertiaApp({
     // and use the following line.
     // see https://inertia-rails.netlify.app/guide/pages#default-layouts
     //
-
     if (page.default?.layout === undefined) {
-      page.default.layout = (page: ReactNode) => AppLayout({ children: page });
+      page.default.layout = (page: ReactNode) => Layout({ children: page });
     }
 
     return page;

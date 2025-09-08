@@ -1,6 +1,7 @@
 import { AppShell, Burger, Group, MantineProvider, Title, createTheme } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import type { ReactNode } from "react";
+import { usePage } from "@inertiajs/react";
 import Navbar from "./components/Navbar";
 
 const theme = createTheme({
@@ -14,8 +15,13 @@ const theme = createTheme({
   },
 });
 
-export default function AppLayout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
+  return (<AppLayout>{children}</AppLayout>)
+}
+
+export function AppLayout({ children }: { children: ReactNode }) {
   const [opened, { toggle }] = useDisclosure();
+  const { props } = usePage<{username: string}>();
   return (
     <>
       <MantineProvider theme={theme} forceColorScheme="light">
@@ -31,7 +37,10 @@ export default function AppLayout({ children }: { children: ReactNode }) {
           <AppShell.Header>
             <Group h="100%" pl="md" pr="sm" justify="space-between">
               <Title order={2}>Railshöck Demo App</Title>
-              <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+              <Group>
+                <span style={{ fontWeight: 500 }}>{props.username}</span>
+                <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+              </Group>
             </Group>
           </AppShell.Header>
           <AppShell.Navbar p="md">
