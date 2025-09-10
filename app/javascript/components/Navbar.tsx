@@ -1,7 +1,7 @@
 import { Link } from "@inertiajs/react";
 import { usePage } from "@inertiajs/react";
 import { NavLink } from "@mantine/core";
-import { deferred_path, merging_path, prefetching_path, index_path } from "../routes";
+import { deferred_path, merging_path, prefetching_path, index_path, no_controller_path } from "../routes";
 
 export default function Navbar() {
   const { component } = usePage();
@@ -18,6 +18,7 @@ export default function Navbar() {
         prefetch
         cacheFor={["5s", "1m"]}
       />
+      <NavLink component={Link} href={no_controller_path()} label="NoController" active={component === "NoController"} />
     </>
   );
 }

@@ -36,7 +36,7 @@ createInertiaApp({
     // and use the following line.
     // see https://inertia-rails.netlify.app/guide/pages#default-layouts
     //
-    if (page.default?.layout === undefined) {
+    if (page?.default?.layout === undefined) {
       page.default.layout = (page: ReactNode) => Layout({ children: page });
     }
 
